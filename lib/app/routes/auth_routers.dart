@@ -2,6 +2,7 @@ import 'package:oncoativ/app/modules/auth/login/login_page.dart';
 import 'package:oncoativ/app/modules/auth/recupera-senha/recupera_senha.dart';
 import 'package:oncoativ/app/modules/auth/register/register_page.dart';
 import 'package:get/get.dart';
+import 'package:oncoativ/app/modules/home/home_page.dart';
 
 class AuthRouters {
   AuthRouters._();
@@ -10,5 +11,6 @@ class AuthRouters {
     GetPage(name: '/auth/login', page: () => const LoginPage()),
     GetPage(name: '/auth/register', page: () => const RegisterPage()),
     GetPage(name: '/auth/recupera-senha', page: () => const RecuperaSenha()),
+    GetPage(name: '/home/home', page: () => const HomePage()),
   ];
 }
