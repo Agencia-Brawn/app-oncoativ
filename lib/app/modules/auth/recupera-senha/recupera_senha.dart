@@ -7,14 +7,18 @@ import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_button_desativa.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_password.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class RecuperaSenha extends StatelessWidget {
+  const RecuperaSenha({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OncoativAppBar(
         elevation: 0,
+        title: const Text(
+          'Recuperação de Senha',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: LayoutBuilder(builder: (_, constraints) {
         return Stack(
@@ -25,21 +29,8 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Oncoativ',
-                    style: TextStyle(
-                        color: Color(0xFF1D1617),
-                        fontWeight: FontWeight.bold,
-                        fontSize: 48),
-                  ),
-                  const Text(
-                    'Adote hábitos saudáveis',
-                    style: TextStyle(color: Color(0xFF1D1617), fontSize: 17),
-                  ),
-                  const SizedBox(
-                    height: 52,
-                  ),
-                  const Text(
-                    'Faça seu Login',
+                    'Insira seu email e enviaremos um link para você voltar acessar a sua conta.',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color(0xFF1D1617),
                         fontSize: 17,
@@ -57,34 +48,10 @@ class LoginPage extends StatelessWidget {
                             ),
                             const OncoativTextFromField(
                               label: 'Email:',
-                              // icon: Icon(
-                              //   Icons.local_post_office_outlined,
-                              //   size: 24,
-                              //   color: Color(0xFF7B6F72),
-                              // ),
-                            ),
-                            const SizedBox(
-                              height: 16,
-                            ),
-                            const SenhaExibir(),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                            Center(
-                              child: TextButton(
-                                style: TextButton.styleFrom(
-                                  textStyle: const TextStyle(fontSize: 10),
-                                ),
-                                onPressed: () {
-                                  Get.toNamed('/auth/recupera-senha');
-                                },
-                                child: const Text(
-                                  'Equeceu sua senha ?',
-                                  style: TextStyle(
-                                    color: Color(0xFFADA4A5),
-                                    fontSize: 17,
-                                  ),
-                                ),
+                              icon: Icon(
+                                Icons.local_post_office_outlined,
+                                size: 24,
+                                color: Color(0xFF7B6F72),
                               ),
                             ),
                             const SizedBox(
@@ -94,7 +61,7 @@ class LoginPage extends StatelessWidget {
                               width: double.infinity,
                               child: OncoativButton(
                                 width: double.infinity,
-                                label: 'ENTRAR',
+                                label: 'RECUPERAR CONTA',
                                 onPressed: () {},
                               ),
                             ),
