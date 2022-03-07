@@ -95,7 +95,7 @@ class LoginPage extends StatelessWidget {
                               child: OncoativButton(
                                 width: double.infinity,
                                 label: 'ENTRAR',
-                                onPressed: () {},
+                                onPressed: () { Get.toNamed('/home/home'); },
                               ),
                             ),
                             const SizedBox(
