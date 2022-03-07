@@ -5,6 +5,7 @@ import 'package:oncoativ/app/core/ui/widgets/oncativ_textformfield.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_button_desativa.dart';
+import 'package:oncoativ/app/core/ui/widgets/oncoativ_password.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -58,10 +59,7 @@ class LoginPage extends StatelessWidget {
                             const SizedBox(
                               height: 16,
                             ),
-                            const OncoativTextFromField(
-                              label: 'Senha:',
-                              obscureText: true,  
-                            ),
+                            const SenhaExibir(),
                             const SizedBox(
                               height: 16,
                             ),
