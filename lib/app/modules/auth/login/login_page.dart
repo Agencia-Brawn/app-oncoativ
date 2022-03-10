@@ -101,17 +101,17 @@ class LoginPage extends StatelessWidget {
                             const SizedBox(
                               height: 8,
                             ),
-                            SizedBox(
-                              width: double.infinity,
-                              child: OncoativButtonDesativa(
-                                width: double.infinity,
-                                label: 'CADASTRE-SE',
-                                color: const Color(0xFFADA4A5),
-                                onPressed: () {
-                                  Get.toNamed('/auth/register');
-                                },
-                              ),
-                            ),
+                            // SizedBox(
+                            //   width: double.infinity,
+                            //   child: OncoativButtonDesativa(
+                            //     width: double.infinity,
+                            //     label: 'CADASTRE-SE',
+                            //     color: const Color(0xFFADA4A5),
+                            //     onPressed: () {
+                            //       Get.toNamed('/auth/register');
+                            //     },
+                            //   ),
+                            // ),
                           ],
                         ),
                       ),
