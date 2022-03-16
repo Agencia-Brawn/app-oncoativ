@@ -4,7 +4,6 @@ import 'package:get/utils.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncativ_textformfield.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
-import 'package:oncoativ/app/core/ui/widgets/oncoativ_button_desativa.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_password.dart';
 
 class LoginPage extends StatelessWidget {
