@@ -1,4 +1,5 @@
 import 'package:oncoativ/app/core/ui/config_ui.dart';
+import 'package:oncoativ/app/routes/home_routers.dart';
 import 'package:oncoativ/app/routes/splash_routers.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,6 +21,7 @@ class VakinhaBurguerMainApp extends StatelessWidget {
       getPages: [
         ...SplashRouters.routers,
         ...AuthRouters.routers,
+        ...HomeRouters.routers,
       ],
     );
   }

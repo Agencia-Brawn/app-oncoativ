@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -90,12 +91,15 @@ class HomePage extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(20),
                                     ),
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Get.toNamed('/exercicios/listaexercicios');
+                                      },
                                       style: ElevatedButton.styleFrom(
                                         primary: Colors.transparent,
                                         shadowColor: Colors.transparent,
                                         shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                         ),
                                       ),
                                       child: const Text('Ver Treino'),
@@ -191,7 +195,8 @@ class HomePage extends StatelessWidget {
                                         primary: Colors.transparent,
                                         shadowColor: Colors.transparent,
                                         shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                         ),
                                       ),
                                       child: const Text(
@@ -287,7 +292,8 @@ class HomePage extends StatelessWidget {
                                         primary: Colors.transparent,
                                         shadowColor: Colors.transparent,
                                         shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                         ),
                                       ),
                                       child: const Text(
@@ -375,7 +381,8 @@ class HomePage extends StatelessWidget {
                                         primary: Colors.transparent,
                                         shadowColor: Colors.transparent,
                                         shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                         ),
                                       ),
                                       child: const Text('Ver Histórico'),
