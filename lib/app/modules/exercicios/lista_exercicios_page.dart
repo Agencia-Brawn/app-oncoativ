@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_card_exercicio.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_card_exercicio_bloqueado.dart';
@@ -42,7 +43,9 @@ class ListaExercicios extends StatelessWidget {
                   tituloExercicio: 'Aquecimento',
                   subtituloExercicio: '3 Séries | 8 Repetições',
                   imagemTreino: 'assets/images/homem-correndo.png',
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed('/exercicios/aquecimento/primeiroaquecimento');
+                  },
                 ),
                 const SizedBox(
                   height: 32,

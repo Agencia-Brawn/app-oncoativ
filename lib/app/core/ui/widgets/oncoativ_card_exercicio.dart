@@ -55,7 +55,7 @@ class OncoativCardExercicios extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: onPressed,
                       style: ElevatedButton.styleFrom(
                         primary: Colors.white,
                         shadowColor: Colors.transparent,
