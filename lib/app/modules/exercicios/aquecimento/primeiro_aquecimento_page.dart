@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_button_gradient_icon.dart';
+import 'package:oncoativ/app/core/ui/widgets/Oncoativ_button_gradient_icon.dart';
 import 'package:oncoativ/app/core/ui/widgets/exercicios/oncoativ_button_som.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
 import 'package:oncoativ/app/core/ui/widgets/exercicios/oncoativ_descricao_exercicio.dart';

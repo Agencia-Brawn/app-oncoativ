@@ -352,7 +352,7 @@ class HomePage extends StatelessWidget {
                                   const SizedBox(
                                     height: 10,
                                   ),
-                                  Container(
+                                  SizedBox(
                                     width:
                                         MediaQuery.of(context).size.width * 0.5,
                                     child: const Text(
