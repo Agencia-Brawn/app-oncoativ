@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_button_gradient_icon.dart';
+import 'package:oncoativ/app/core/ui/widgets/exercicios/oncoativ_button_som.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
+import 'package:oncoativ/app/core/ui/widgets/exercicios/oncoativ_descricao_exercicio.dart';
 
 class PrimeiroAquecimento extends StatelessWidget {
   const PrimeiroAquecimento({Key? key}) : super(key: key);
@@ -22,13 +25,55 @@ class PrimeiroAquecimento extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 1.0,
+                      height: MediaQuery.of(context).size.width * 1.0,
                       child: const Image(
-                        image: AssetImage('assets/images/homem-correndo.png'),
+                        image: AssetImage('assets/gifs/gifteste.png'),
                       ),
-                    )
+                    ),
                   ],
-                )
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      height: MediaQuery.of(context).size.width * 1.0,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            'Aquecimento: Movimento Circular  dos Ombros (para frente)',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20),
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          OncoativDescricaoExercicio(
+                              textDescricao:
+                                  'Levante os ombros e dirija-os para frente realizando um grande movimento circular. Mantenha os braços soltos, se possível, durante toda realização do procedimento.'),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          OncoativButtonIniciar(
+                              label: 'Aperte para esculta instruções'),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          // BUTTON INICIAR
+                          OncoativButtonGradientIcon(
+                              texto: 'Iniciar Aquecimento'),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ],
             )
           ],
