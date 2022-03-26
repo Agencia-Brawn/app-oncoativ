@@ -74,7 +74,7 @@ class SegundoAquecimento extends StatelessWidget {
                       child: OncoativButton(
                           label: 'Descansar',
                           onPressed: () {
-                            Get.toNamed('');
+                            Get.toNamed('/exercicios/aquecimento/terceiroaquecimentodescanso');
                           }),
                     ),
                   ],

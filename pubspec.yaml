@@ -67,6 +67,10 @@ flutter:
     - assets/images/calendario.png
     - assets/images/especialista.png
     - assets/gifs/gifteste.png
+    - assets/images/descanso.png
+    - assets/images/cronometro.png
+    - assets/images/descanso.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
