@@ -2,11 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class OncoativButtonGradientIcon extends StatelessWidget {
-  final String texto;
+  final String label;
+  final VoidCallback? onPressed;
+  final icon;
+
 
   const OncoativButtonGradientIcon({
     Key? key,
-    required this.texto,
+    required this.label,
+    required this.onPressed,
+    this.icon,
   }) : super(key: key);
 
   @override
@@ -33,18 +38,16 @@ class OncoativButtonGradientIcon extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
         ),
-        icon: Icon(Icons.play_circle_fill_rounded, size: 30),
-        label: const Text(
-          'Iniciar Aquecimento',
-          style: TextStyle(
+        icon: icon,
+        label: Text(
+          label,
+          style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w700,
             color: Colors.white,
           ),
         ),
-        onPressed: () {
-          // Respond to button press
-        },
+        onPressed: onPressed,
       ),
     );
   }

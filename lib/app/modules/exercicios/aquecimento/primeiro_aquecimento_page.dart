@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_button_gradient_icon.dart';
 import 'package:oncoativ/app/core/ui/widgets/exercicios/oncoativ_button_som.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
@@ -43,8 +44,8 @@ class PrimeiroAquecimento extends StatelessWidget {
                       height: MediaQuery.of(context).size.width * 1.0,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text(
+                        children: [
+                          const Text(
                             'Aquecimento: Movimento Circular  dos Ombros (para frente)',
                             textAlign: TextAlign.center,
                             style: TextStyle(
@@ -52,23 +53,28 @@ class PrimeiroAquecimento extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          OncoativDescricaoExercicio(
+                          const OncoativDescricaoExercicio(
                               textDescricao:
                                   'Levante os ombros e dirija-os para frente realizando um grande movimento circular. Mantenha os braços soltos, se possível, durante toda realização do procedimento.'),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          OncoativButtonIniciar(
+                          const OncoativButtonIniciar(
                               label: 'Aperte para esculta instruções'),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           // BUTTON INICIAR
                           OncoativButtonGradientIcon(
-                              texto: 'Iniciar Aquecimento'),
+                              label: 'Iniciar Aquecimento',
+                              icon: const Icon(Icons.play_circle_fill_sharp),
+                              onPressed: () {
+                                Get.toNamed(
+                                    '/exercicios/aquecimento/segundoaquecimento');
+                              }),
                         ],
                       ),
                     ),
