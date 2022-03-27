@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_descanso_serie.dart';
+import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_exercicio_serie.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
+import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
 
-class QuintoAquecimentoDescanso extends StatelessWidget {
-  const QuintoAquecimentoDescanso({Key? key}) : super(key: key);
+class SengundaSerie extends StatelessWidget {
+  const SengundaSerie({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +19,12 @@ class QuintoAquecimentoDescanso extends StatelessWidget {
       body: SingleChildScrollView(
         child: Stack(
           children: [
-            OncoativDescansoSerie(
-              titulo: 'Descanse um pouco',
-              imagem: 'assets/images/descanso.png',
+            OncoativExercicioSerie(
+              titulo: 'Série 2 de 3',
+              subTitulo: '8 repetições',
+              imagem: 'assets/gifs/gifteste.png',
               onPressed: () {
-                Get.toNamed('/exercicios/aquecimento/sextoaquecimento');
+                Get.toNamed('/exercicios/aquecimento/quintoaquecimentodescanso');
               },
             ),
           ],

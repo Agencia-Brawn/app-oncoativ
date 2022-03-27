@@ -4,8 +4,8 @@ import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_exercicio_serie
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
 
-class QuartoAquecimento extends StatelessWidget {
-  const QuartoAquecimento({Key? key}) : super(key: key);
+class PrimeiraSerie extends StatelessWidget {
+  const PrimeiraSerie({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,11 +20,11 @@ class QuartoAquecimento extends StatelessWidget {
         child: Stack(
           children: [
             OncoativExercicioSerie(
-              titulo: 'Série 2 de 3',
+              titulo: 'Série 1 de 3',
               subTitulo: '8 repetições',
               imagem: 'assets/gifs/gifteste.png',
               onPressed: () {
-                Get.toNamed('/exercicios/aquecimento/quintoaquecimentodescanso');
+                Get.toNamed('/exercicios/aquecimento/terceiroaquecimentodescanso');
               },
             ),
           ],

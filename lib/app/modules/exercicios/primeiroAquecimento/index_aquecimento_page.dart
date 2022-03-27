@@ -5,8 +5,8 @@ import 'package:oncoativ/app/core/ui/widgets/exercicios/oncoativ_button_som.dart
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
 import 'package:oncoativ/app/core/ui/widgets/exercicios/oncoativ_descricao_exercicio.dart';
 
-class PrimeiroAquecimento extends StatelessWidget {
-  const PrimeiroAquecimento({Key? key}) : super(key: key);
+class IndexAquecimento extends StatelessWidget {
+  const IndexAquecimento({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

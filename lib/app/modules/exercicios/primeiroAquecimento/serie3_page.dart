@@ -5,8 +5,8 @@ import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_exercicio_serie
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
 
-class SextoAquecimento extends StatelessWidget {
-  const SextoAquecimento({Key? key}) : super(key: key);
+class TerceiraSerie extends StatelessWidget {
+  const TerceiraSerie({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
