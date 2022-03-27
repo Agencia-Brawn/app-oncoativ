@@ -18,11 +18,14 @@ class SegundoAquecimento extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Stack(
-          children: const [
+          children: [
             OncoativExercicioSerie(
               titulo: 'Série 1 de 3',
               subTitulo: '8 repetições',
               imagem: 'assets/gifs/gifteste.png',
+              onPressed: () {
+                Get.toNamed('/exercicios/aquecimento/terceiroaquecimentodescanso');
+              },
             ),
           ],
         ),

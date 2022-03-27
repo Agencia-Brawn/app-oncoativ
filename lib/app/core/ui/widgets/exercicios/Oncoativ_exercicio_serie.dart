@@ -7,12 +7,14 @@ class OncoativExercicioSerie extends StatelessWidget {
   final String titulo;
   final String subTitulo;
   final String imagem;
+  final VoidCallback? onPressed;
 
   const OncoativExercicioSerie({
     Key? key,
     required this.titulo,
     required this.subTitulo,
     required this.imagem,
+    required this.onPressed,
   }) : super(key: key);
 
   @override
@@ -72,10 +74,8 @@ class OncoativExercicioSerie extends StatelessWidget {
               width: MediaQuery.of(context).size.width * 0.8,
               child: OncoativButton(
                   label: 'Descansar',
-                  onPressed: () {
-                    Get.toNamed(
-                        '/exercicios/aquecimento/terceiroaquecimentodescanso');
-                  }),
+                  onPressed: onPressed,
+                  ),
             ),
           ],
         ),
