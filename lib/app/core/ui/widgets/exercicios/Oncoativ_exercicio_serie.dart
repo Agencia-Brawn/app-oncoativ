@@ -3,6 +3,8 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
 
+import 'Oncoativ_video.dart';
+
 class OncoativExercicioSerie extends StatelessWidget {
   final String titulo;
   final String subTitulo;
@@ -55,12 +57,18 @@ class OncoativExercicioSerie extends StatelessWidget {
                         fontSize: 20),
                   ),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 1.0,
                   height: MediaQuery.of(context).size.width * 1.0,
                   child: Image(
                     image: AssetImage(imagem),
                   ),
+                ),
+                const SizedBox(
+                  height: 32,
                 ),
               ],
             ),
@@ -73,9 +81,9 @@ class OncoativExercicioSerie extends StatelessWidget {
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.8,
               child: OncoativButton(
-                  label: 'Descansar',
-                  onPressed: onPressed,
-                  ),
+                label: 'Descansar',
+                onPressed: onPressed,
+              ),
             ),
           ],
         ),
