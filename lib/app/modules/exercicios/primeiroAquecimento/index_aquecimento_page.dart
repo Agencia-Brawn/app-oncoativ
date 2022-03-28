@@ -33,7 +33,7 @@ class IndexAquecimento extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 1.0,
                       height: MediaQuery.of(context).size.width * 0.9,
                       child: const Image(
-                        image: AssetImage('assets/gifs/ombros-gif.gif'),
+                        image: AssetImage('assets/gifs/ombros_frente.gif'),
                       ),
                     ),
                   ],

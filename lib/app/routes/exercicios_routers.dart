@@ -4,7 +4,7 @@ import 'package:oncoativ/app/modules/exercicios/primeiroAquecimento/descanso2_pa
 import 'package:oncoativ/app/modules/exercicios/primeiroAquecimento/index_aquecimento_page.dart';
 import 'package:oncoativ/app/modules/exercicios/primeiroAquecimento/serie1_page.dart';
 import 'package:oncoativ/app/modules/exercicios/primeiroAquecimento/serie3_page.dart';
-import 'package:oncoativ/app/modules/exercicios/primeiroAquecimento/desacanso1_page.dart';
+import 'package:oncoativ/app/modules/exercicios/primeiroAquecimento/descanso1_page.dart';
 
 class ExerciciosRouters {
   ExerciciosRouters._();

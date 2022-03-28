@@ -21,7 +21,7 @@ class PrimeiraSerie extends StatelessWidget {
             OncoativExercicioSerie(
               titulo: 'Série 1 de 3',
               subTitulo: '8 repetições',
-              imagem: 'assets/gifs/ombros-gif.gif',
+              imagem: 'assets/gifs/ombros_frente.gif',
               onPressed: () {
                 Get.toNamed('/exercicios/aquecimento/terceiroaquecimentodescanso');
               },
