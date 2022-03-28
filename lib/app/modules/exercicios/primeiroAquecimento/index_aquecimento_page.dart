@@ -22,15 +22,18 @@ class IndexAquecimento extends StatelessWidget {
           children: [
             Column(
               children: [
+                Container(
+                  height: 16,
+                ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 1.0,
-                      height: MediaQuery.of(context).size.width * 1.0,
+                      height: MediaQuery.of(context).size.width * 0.9,
                       child: const Image(
-                        image: AssetImage('assets/gifs/gifteste.png'),
+                        image: AssetImage('assets/gifs/ombros-gif.gif'),
                       ),
                     ),
                   ],
@@ -45,6 +48,9 @@ class IndexAquecimento extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          const SizedBox(
+                            height: 16,
+                          ),
                           const Text(
                             'Aquecimento: Movimento Circular  dos Ombros (para frente)',
                             textAlign: TextAlign.center,

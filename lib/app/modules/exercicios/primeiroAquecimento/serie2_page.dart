@@ -22,7 +22,7 @@ class SengundaSerie extends StatelessWidget {
             OncoativExercicioSerie(
               titulo: 'Série 2 de 3',
               subTitulo: '8 repetições',
-              imagem: 'assets/gifs/gifteste.png',
+              imagem: 'assets/gifs/ombros-gif.gif',
               onPressed: () {
                 Get.toNamed('/exercicios/aquecimento/quintoaquecimentodescanso');
               },

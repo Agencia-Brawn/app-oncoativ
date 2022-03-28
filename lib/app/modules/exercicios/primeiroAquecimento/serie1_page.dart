@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oncoativ/app/core/ui/widgets/exercicios/Oncoativ_exercicio_serie.dart';
 import 'package:oncoativ/app/core/ui/widgets/oncoativ_appbar.dart';
-import 'package:oncoativ/app/core/ui/widgets/oncoativ_button.dart';
 
 class PrimeiraSerie extends StatelessWidget {
   const PrimeiraSerie({Key? key}) : super(key: key);
@@ -22,7 +21,7 @@ class PrimeiraSerie extends StatelessWidget {
             OncoativExercicioSerie(
               titulo: 'Série 1 de 3',
               subTitulo: '8 repetições',
-              imagem: 'assets/gifs/gifteste.png',
+              imagem: 'assets/gifs/ombros-gif.gif',
               onPressed: () {
                 Get.toNamed('/exercicios/aquecimento/terceiroaquecimentodescanso');
               },
