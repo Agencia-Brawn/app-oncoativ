@@ -67,13 +67,18 @@ flutter:
     - assets/images/homem-correndo.png
     - assets/images/calendario.png
     - assets/images/especialista.png
-    - assets/gifs/gifteste.png
     - assets/images/descanso.png
     - assets/images/cronometro.png
     - assets/images/descanso.png
-    - assets/gifs/ombros-lado.mp4
-    - assets/gifs/quadril.mp4
-    - assets/gifs/ombros-gif.gif
+    - assets/gifs/apoio-parede.gif
+    - assets/gifs/bastao.gif
+    - assets/gifs/degrau.gif
+    - assets/gifs/ombros_costa.gif
+    - assets/gifs/ombros_frente.gif
+    - assets/gifs/puxada.gif
+    - assets/gifs/quadril.gif
+    - assets/gifs/sentar_lado.gif
+
     
 
 
