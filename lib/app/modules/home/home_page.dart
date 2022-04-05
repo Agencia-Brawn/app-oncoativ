@@ -92,7 +92,8 @@ class HomePage extends StatelessWidget {
                                     ),
                                     child: ElevatedButton(
                                       onPressed: () {
-                                        Get.toNamed('/exercicios/listaexercicios');
+                                        Get.toNamed(
+                                            '/exercicios/listaexercicios');
                                       },
                                       style: ElevatedButton.styleFrom(
                                         primary: Colors.transparent,
@@ -190,7 +191,10 @@ class HomePage extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(20),
                                     ),
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Get.toNamed(
+                                            '/exercicios/videoplayerapp');
+                                      },
                                       style: ElevatedButton.styleFrom(
                                         primary: Colors.transparent,
                                         shadowColor: Colors.transparent,
