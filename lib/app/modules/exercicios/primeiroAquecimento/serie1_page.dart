@@ -22,6 +22,7 @@ class PrimeiraSerie extends StatelessWidget {
               titulo: 'Série 1 de 3',
               subTitulo: '8 repetições',
               imagem: 'assets/gifs/ombros_frente.gif',
+              tituloButton: 'Descansar',
               onPressed: () {
                 Get.toNamed('/exercicios/aquecimento/terceiroaquecimentodescanso');
               },

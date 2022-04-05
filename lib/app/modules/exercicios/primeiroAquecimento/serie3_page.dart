@@ -24,10 +24,11 @@ class TerceiraSerie extends StatelessWidget {
               titulo: 'Série 3 de 3',
               subTitulo: '8 repetições',
               imagem: 'assets/gifs/ombros_frente.gif',
+               tituloButton: 'Finalizar Série',
               onPressed: () {
-                Get.toNamed('/exercicios/aquecimento/primeiroaquecimento');
+                Get.toNamed('/exercicios/segundoAquecimento/indexaquecimento');
               }, 
-            ),
+            ), 
           ],
         ),
       ),

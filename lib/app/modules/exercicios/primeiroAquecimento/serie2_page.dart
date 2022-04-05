@@ -23,6 +23,7 @@ class SengundaSerie extends StatelessWidget {
               titulo: 'Série 2 de 3',
               subTitulo: '8 repetições',
               imagem: 'assets/gifs/ombros_frente.gif',
+               tituloButton: 'Descansar',
               onPressed: () {
                 Get.toNamed('/exercicios/aquecimento/quintoaquecimentodescanso');
               },
